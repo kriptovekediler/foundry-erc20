@@ -8,8 +8,4 @@ contract OurToken is ERC20 {
     constructor(uint256 initialSupply) ERC20("OurToken", "OUT") {
         _mint(msg.sender, initialSupply);
     }
-
-    function burn(uint256 amount) public {
-        _burn(msg.sender, amount);
-    }
 }
